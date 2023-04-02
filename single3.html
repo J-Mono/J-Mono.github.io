@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper" class="slider-thumb">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Project 3 - Personal Budget Planner</a></h1>
+						<nav class="links">
+							<ul>
+								<li><h1><a href="index.html">Back to my projects</a></h1></li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Personal Budget Planner</a></h2>
+										<p>Record Monthly Spendings and see what you have left</p>
+									</div>
+								</header>
+										<!-- Slideshow container -->
+										<div class="slideshow-container">
+
+										  <!-- Full-width images with number and caption text -->
+											<div class="mySlides fade">
+												<div class="numbertext">1 / 4</div>
+												<img src="images/Personal Budget Planner/MainPage.png"  style="width:100%" >
+												<div class="text">Home Page</div>
+											</div>
+
+											<div class="mySlides fade">
+												<div class="numbertext">2 / 4</div>
+												<img src="images/Personal Budget Planner/Expenses1.png" style="width:100%">
+												<div class="text">if you choose option 1</div>
+											</div>
+
+											<div class="mySlides fade">
+												<div class="numbertext">3 / 4</div>
+												<img src="images/Personal Budget Planner/Calculator.png" style="width:100%">
+												<div class="text">calculator example for option 1</div>
+											</div>
+											
+											<div class="mySlides fade">
+												<div class="numbertext">4 / 4</div>
+												<img src="images/Personal Budget Planner/Expenses2.png" style="width:100%">
+												<div class="text">If you choose option 2</div>
+											</div>
+											<a class="prev" onclick="plusSlides(-1)">❮</a>
+											<a class="next" onclick="plusSlides(1)">❯</a>
+										</div>
+										<br>
+
+										<div style="text-align:center">
+										  <span class="dot" onclick="currentSlide(1)"></span> 
+										  <span class="dot" onclick="currentSlide(2)"></span> 
+										  <span class="dot" onclick="currentSlide(3)"></span> 
+										  <span class="dot" onclick="currentSlide(4)"></span>
+										</div>
+										
+									<script>
+										let slideIndex = 1;
+										showSlides(slideIndex);
+
+										function plusSlides(n) {
+										  showSlides(slideIndex += n);
+										}
+
+										function currentSlide(n) {
+										  showSlides(slideIndex = n);
+										}
+
+										function showSlides(n) {
+										  let i;
+										  let slides = document.getElementsByClassName("mySlides");
+										  let dots = document.getElementsByClassName("dot");
+										  if (n > slides.length) {slideIndex = 1}    
+										  if (n < 1) {slideIndex = slides.length}
+										  for (i = 0; i < slides.length; i++) {
+											slides[i].style.display = "none";  
+										  }
+										  for (i = 0; i < dots.length; i++) {
+											dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slides[slideIndex-1].style.display = "block";  
+										  dots[slideIndex-1].className += " active";
+										}
+									</script>	
+								<p>
+									The Idea of the app:
+									The Personal Budget Console App is an app designed to calculate your monthly spendings and find out what you have left after the deductions are made.
+									its intention is to help users see where their money goes and it shall be available on the phone app.
+								</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="https://github.com/J-Mono/Personal-Budget-Planner-Console" class="button large">Get Project from Github Page</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
