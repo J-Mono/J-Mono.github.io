@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper" class="slider-thumb">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Project 2 - WPF TManager</a></h1>
+						<nav class="links">
+							<ul>
+								<li><h1><a href="index.html">Back to my projects</a></h1></li>
+							</ul>
+						</nav>
+					</header>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">WPF TManager</a></h2>
+										<p>Making Time Management Easier</p>
+									</div>
+								</header>
+										<!-- Slideshow container -->
+										<div class="slideshow-container">
+
+										  <!-- Full-width images with number and caption text -->
+											<div class="mySlides fade">
+												<div class="numbertext">1 / 5</div>
+												<img src="images/WPFTManager/Login.png"  style="width:100%" >
+												<div class="text">Login</div>
+											</div>
+
+											<div class="mySlides fade">
+												<div class="numbertext">2 / 5</div>
+												<img src="images/WPFTManager/Registration.png" style="width:100%">
+												<div class="text">Register</div>
+											</div>
+
+											<div class="mySlides fade">
+												<div class="numbertext">3 / 5</div>
+												<img src="images/WPFTManager/HomePage.png" style="width:100%">
+												<div class="text">Home</div>
+											</div>
+											
+											<div class="mySlides fade">
+												<div class="numbertext">4 / 5</div>
+												<img src="images/WPFTManager/Add Modules.png" style="width:100%">
+												<div class="text">Add Modules</div>
+											</div>
+											
+											<div class="mySlides fade">
+												<div class="numbertext">5 / 5</div>
+												<img src="images/WPFTManager/ViewModules.png" style="width:100%">
+												<div class="text">View Modules</div>
+											</div>
+											<a class="prev" onclick="plusSlides(-1)">❮</a>
+											<a class="next" onclick="plusSlides(1)">❯</a>
+										</div>
+										<br>
+
+										<div style="text-align:center">
+										  <span class="dot" onclick="currentSlide(1)"></span> 
+										  <span class="dot" onclick="currentSlide(2)"></span> 
+										  <span class="dot" onclick="currentSlide(3)"></span> 
+										  <span class="dot" onclick="currentSlide(4)"></span>
+										  <span class="dot" onclick="currentSlide(5)"></span>
+										</div>
+										
+									<script>
+										let slideIndex = 1;
+										showSlides(slideIndex);
+
+										function plusSlides(n) {
+										  showSlides(slideIndex += n);
+										}
+
+										function currentSlide(n) {
+										  showSlides(slideIndex = n);
+										}
+
+										function showSlides(n) {
+										  let i;
+										  let slides = document.getElementsByClassName("mySlides");
+										  let dots = document.getElementsByClassName("dot");
+										  if (n > slides.length) {slideIndex = 1}    
+										  if (n < 1) {slideIndex = slides.length}
+										  for (i = 0; i < slides.length; i++) {
+											slides[i].style.display = "none";  
+										  }
+										  for (i = 0; i < dots.length; i++) {
+											dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slides[slideIndex-1].style.display = "block";  
+										  dots[slideIndex-1].className += " active";
+										}
+									</script>	
+								<p>
+									The Idea of the app:
+									TManager is a local software application that will track down your daily academic activities. It will be able to store which modules the student does. 
+									as well as track down the amount of time spent studying, and how much study time each module will get per week. 
+									This is the perfect application for students working long hours on many subjects.
+								</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="https://github.com/J-Mono/WPFTManager" class="button large">Get Project from Github Page</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
